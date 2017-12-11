@@ -19,4 +19,6 @@ attr_accessor :path
       artist.save
       song = Song.new(song_data[1])
       artist.add_song(song)
+    end
+  end
 end
