@@ -13,7 +13,6 @@ attr_accessor :path
 
 
   def import
-    self.files.each do |file| Song.new_by_filename(file)
-    end
-  end
+    self.files.each do |filename|
+      song_data = filename.split(" - ")
 end
