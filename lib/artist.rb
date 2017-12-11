@@ -18,6 +18,7 @@ end
 
 def save
   unless @@all.include? self
+    self.class.all << self
   @@all << self
 end
 
