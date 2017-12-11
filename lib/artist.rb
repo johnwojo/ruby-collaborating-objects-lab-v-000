@@ -17,6 +17,7 @@ def songs
 end
 
 def save
+  unless @@all.include? self
   @@all << self
 end
 
